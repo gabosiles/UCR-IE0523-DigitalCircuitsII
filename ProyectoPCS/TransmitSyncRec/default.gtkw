@@ -1,0 +1,92 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Nov 30 17:41:20 2024
+[*]
+[dumpfile] "C:\Users\gsile\Desktop\2S2024_G3\TransmitSyncRec\resultados.vcd"
+[dumpfile_mtime] "Sat Nov 30 17:35:05 2024"
+[dumpfile_size] 7805
+[savefile] "C:\Users\gsile\Desktop\2S2024_G3\TransmitSyncRec\default.gtkw"
+[timestart] 0
+[size] 1920 1009
+[pos] -113 -113
+*-4.000000 22 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 197
+[signals_width] 263
+[sst_expanded] 1
+[sst_vpaned_height] 307
+@28
+testbench.SYNC.clock
+testbench.SYNC.reset
+testbench.REC.mr_main_reset
+@200
+---- Transmisor ---
+-inputs
+@c00022
+[color] 2
+testbench.U0.current_state[6:0]
+@28
+(0)testbench.U0.current_state[6:0]
+(1)testbench.U0.current_state[6:0]
+(2)testbench.U0.current_state[6:0]
+(3)testbench.U0.current_state[6:0]
+(4)testbench.U0.current_state[6:0]
+(5)testbench.U0.current_state[6:0]
+(6)testbench.U0.current_state[6:0]
+@1401200
+-group_end
+@22
+testbench.U0.TXD[7:0]
+@28
+testbench.U0.TX_EN
+@200
+-medium
+@22
+testbench.U0.TX_OSET[7:0]
+@24
+testbench.U1.six_bit_counter[3:0]
+testbench.U1.four_bit_counter[1:0]
+@28
+testbench.U1.tx_disparity
+@200
+-outputs
+@22
+testbench.U1.tx_code_group[9:0]
+@200
+---- Sync ---
+@22
+[color] 2
+testbench.SYNC.current_state[8:0]
+@200
+-inputs
+@22
+testbench.SYNC.rx_code_group[9:0]
+@200
+-outputs
+@22
+testbench.SYNC.SUDI[9:0]
+@28
+testbench.SYNC.rx_even
+testbench.SYNC.code_sync_status
+@200
+---- Receptor ---
+@25
+[color] 2
+testbench.REC.state[7:0]
+@200
+-inputs
+@28
+testbench.REC.rx_even
+@22
+testbench.REC.SUDI[9:0]
+@28
+testbench.REC.code_sync_status
+@200
+-outputs
+@28
+testbench.REC.RX_DV
+testbench.REC.receiving
+@22
+testbench.REC.RXD[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

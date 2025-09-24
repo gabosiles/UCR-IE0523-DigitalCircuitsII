@@ -1,0 +1,735 @@
+$date
+	Sat Nov 30 11:35:05 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$scope module U0 $end
+$var wire 1 ! GTX_CLK $end
+$var wire 1 " RESET $end
+$var wire 8 # TXD [7:0] $end
+$var wire 1 $ TX_EN $end
+$var parameter 6 % END_OF_PACKET_NOEXT $end
+$var parameter 6 & EPD2_NOEXT $end
+$var parameter 6 ' START_OF_PACKET $end
+$var parameter 6 ( TX_DATA $end
+$var parameter 6 ) TX_PACKET $end
+$var parameter 6 * XMIT_DATA $end
+$var reg 8 + TX_OSET [7:0] $end
+$var reg 1 , counter_idle $end
+$var reg 7 - current_state [6:0] $end
+$var reg 1 . next_counter_idle $end
+$var reg 7 / next_state [6:0] $end
+$var reg 1 0 next_wait_a_little $end
+$var reg 1 1 wait_a_little $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module U1 $end
+$var wire 1 ! GTX_CLK $end
+$var wire 1 " RESET $end
+$var wire 8 2 TX_OSET [7:0] $end
+$var parameter 4 3 DATA_GO $end
+$var parameter 4 4 GENERATE_CODE_GROUPS $end
+$var parameter 4 5 IDLE_I2B $end
+$var parameter 4 6 SPECIAL_GO $end
+$var reg 1 7 TX_OSET_indicate $end
+$var reg 4 8 current_state [3:0] $end
+$var reg 2 9 four_bit_counter [1:0] $end
+$var reg 4 : next_state [3:0] $end
+$var reg 1 ; rd_inicial $end
+$var reg 1 < rd_parcial $end
+$var reg 4 = six_bit_counter [3:0] $end
+$var reg 10 > tx_code_group [9:0] $end
+$var reg 1 ? tx_disparity $end
+$var reg 1 @ tx_even $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module SYNC $end
+$var wire 10 A rx_code_group [9:0] $end
+$var wire 1 " reset $end
+$var wire 1 ! clock $end
+$var parameter 9 B ACQUIRE_SYNC_1 $end
+$var parameter 9 C ACQUIRE_SYNC_2 $end
+$var parameter 9 D COMMA_DETECT_1 $end
+$var parameter 9 E COMMA_DETECT_2 $end
+$var parameter 9 F COMMA_DETECT_3 $end
+$var parameter 9 G LOSS_OF_SYNC $end
+$var parameter 9 H SYNC_ACQUIRED_1 $end
+$var parameter 9 I SYNC_ACQUIRED_2 $end
+$var parameter 9 J SYNC_ACQUIRED_2A $end
+$var reg 10 K SUDI [9:0] $end
+$var reg 1 L code_sync_status $end
+$var reg 9 M current_state [8:0] $end
+$var reg 2 N good_cgs [1:0] $end
+$var reg 2 O next_good_cgs [1:0] $end
+$var reg 1 P next_rx_even $end
+$var reg 9 Q next_state [8:0] $end
+$var reg 1 R rx_even $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module REC $end
+$var wire 1 R rx_even $end
+$var wire 1 S mr_main_reset $end
+$var wire 1 L code_sync_status $end
+$var wire 10 T SUDI [9:0] $end
+$var wire 1 ! RX_CLK $end
+$var parameter 1 U FAIL $end
+$var parameter 1 V FALSE $end
+$var parameter 7 W IDLE_D $end
+$var parameter 7 X LINK_FAILED $end
+$var parameter 7 Y RECEIVE $end
+$var parameter 7 Z RX_K $end
+$var parameter 7 [ START_OF_PACKET $end
+$var parameter 7 \ TRI_RRI $end
+$var parameter 1 ] TRUE $end
+$var parameter 7 ^ WAIT_FOR_K $end
+$var reg 8 _ RXD [7:0] $end
+$var reg 1 ` RX_DV $end
+$var reg 1 a RX_ER $end
+$var reg 2 b check_end [1:0] $end
+$var reg 8 c next_state [7:0] $end
+$var reg 1 d receiving $end
+$var reg 1 e rx_lpi_active $end
+$var reg 8 f state [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 ^
+1]
+b1000000 \
+b10000 [
+b100 Z
+b100000 Y
+b1 X
+b1000 W
+0V
+0U
+b100000000 J
+b10000000 I
+b1000000 H
+b1 G
+b100000 F
+b1000 E
+b10 D
+b10000 C
+b100 B
+b100 6
+b10 5
+b1 4
+b1000 3
+b1 *
+b100 )
+b1000 (
+b10 '
+b100000 &
+b10000 %
+$end
+#0
+$dumpvars
+b10 f
+xe
+0d
+b10 c
+bx b
+0a
+0`
+bx _
+bx T
+1S
+xR
+bx Q
+xP
+bx O
+bx N
+bx M
+xL
+bx K
+bx A
+x@
+x?
+bx >
+bx =
+x<
+x;
+bx :
+bx 9
+bx 8
+x7
+bx 2
+x1
+x0
+b1 /
+x.
+bx -
+x,
+bx +
+0$
+bx #
+0"
+0!
+$end
+#5
+1@
+b11111010 >
+b11111010 A
+b0 O
+1P
+b10 Q
+b10111100 +
+b10111100 2
+00
+1.
+b10 :
+0R
+b0 N
+0L
+b1 M
+01
+0,
+b1 -
+b0 9
+b0 =
+0<
+0;
+07
+0?
+b1 8
+1!
+#10
+0!
+0S
+1"
+#15
+b1 :
+17
+0@
+b110110101 >
+b110110101 A
+0.
+b1010000 +
+b1010000 2
+b100 Q
+0P
+b100 c
+b10 8
+b10 9
+b100 =
+1,
+1R
+b10 M
+b11111010 K
+b11111010 T
+1!
+#20
+b1000 c
+b100 f
+0!
+#25
+1@
+1P
+0e
+b1 c
+1.
+b10111100 +
+b10111100 2
+07
+0R
+b100 M
+b110110101 K
+b110110101 T
+b1 f
+0,
+b1 8
+b1000 Q
+b11111010 >
+b11111010 A
+b10 :
+1?
+1<
+1!
+#30
+0!
+#35
+b1 :
+17
+0@
+b1001000101 >
+b1001000101 A
+0.
+b1010000 +
+b1010000 2
+b10000 Q
+0P
+b10 8
+1;
+1,
+1R
+b1000 M
+b11111010 K
+b11111010 T
+1!
+#40
+0!
+#45
+b100000 Q
+1@
+b11111010 >
+b11111010 A
+1P
+1.
+b10111100 +
+b10111100 2
+b10 :
+07
+0R
+b10000 M
+b1001000101 K
+b1001000101 T
+0,
+b1 8
+b10 =
+1!
+#50
+0!
+#55
+b1 :
+17
+0@
+b1001000101 >
+b1001000101 A
+0.
+b1010000 +
+b1010000 2
+b1000000 Q
+0P
+b10 8
+0<
+b100 =
+1,
+1R
+b100000 M
+b11111010 K
+b11111010 T
+1!
+#60
+0!
+#65
+b10 c
+1@
+b11111010 >
+b11111010 A
+1L
+1P
+1.
+b10111100 +
+b10111100 2
+b10 :
+07
+0R
+b1000000 M
+b1001000101 K
+b1001000101 T
+0,
+b1 8
+b10 =
+1<
+1!
+#70
+b10 f
+0!
+#75
+b1 :
+17
+0@
+b1001000101 >
+b1001000101 A
+0.
+b1010000 +
+b1010000 2
+b1000000 Q
+0P
+b100 c
+b10 8
+0<
+b100 =
+1,
+1R
+b11111010 K
+b11111010 T
+1!
+#80
+b1000 c
+b100 f
+0!
+#85
+1P
+b1000 c
+1@
+b10010111 >
+b10010111 A
+17
+0R
+b1001000101 K
+b1001000101 T
+b10 -
+b1 8
+b10 =
+b1000 :
+1<
+b100 /
+b11111011 +
+b11111011 2
+1.
+1!
+1$
+#90
+b1000 f
+0!
+#95
+0@
+b1 :
+b110001011 >
+b110001011 A
+b0 +
+b0 2
+0P
+b10000 c
+b1000 8
+0<
+b11 9
+b100 -
+1R
+b10010111 K
+b10010111 T
+b100 /
+1!
+b0 #
+#100
+b100000 c
+b11111011 _
+1d
+1`
+b10000 f
+0!
+#105
+1P
+1d
+1`
+b100000 c
+07
+0R
+b110001011 K
+b110001011 T
+b1 8
+1@
+b110000101 >
+b110000101 A
+b1000 :
+b1000000 +
+b1000000 2
+1!
+b1000000 #
+#110
+b0 _
+1d
+1`
+b100000 f
+0!
+#115
+17
+0@
+b1001001001 >
+b1001001001 A
+0P
+b1000000 _
+1d
+1`
+b1000 8
+b10 9
+1R
+b110000101 K
+b110000101 T
+b1 :
+b110000 +
+b110000 2
+1!
+b110000 #
+#120
+0!
+#125
+1P
+b110000 _
+1d
+1`
+07
+0R
+b1001001001 K
+b1001001001 T
+b1 8
+1@
+b110001101 >
+b110001101 A
+b1000 :
+b10000000 +
+b10000000 2
+1!
+b10000000 #
+#130
+0!
+#135
+17
+0@
+b110001100 >
+b110001100 A
+0P
+b10000000 _
+1d
+1`
+b1000 8
+b11 9
+1R
+b110001101 K
+b110001101 T
+b1 :
+b1100000 +
+b1100000 2
+1!
+b1100000 #
+#140
+0!
+#145
+1@
+b100010111 >
+b100010111 A
+1P
+b1100000 _
+1d
+1`
+b11111101 +
+b11111101 2
+b1 :
+17
+0R
+b110001100 K
+b110001100 T
+b10000 -
+b1 8
+b10 9
+b100000 /
+1!
+0$
+#150
+0!
+#155
+0?
+0@
+b1010111 >
+b1010111 A
+17
+10
+b11110111 +
+b11110111 2
+0P
+b1 b
+1d
+1`
+b11 9
+b100000 -
+1R
+b100010111 K
+b100010111 T
+1!
+#160
+0!
+#165
+b10 :
+b11111010 >
+b11111010 A
+1P
+b10 b
+1d
+1`
+b1 /
+b10111100 +
+b10111100 2
+00
+1@
+07
+0R
+b1010111 K
+b1010111 T
+11
+0?
+0;
+1!
+#170
+0!
+#175
+b1 :
+17
+0@
+b1001000101 >
+b1001000101 A
+0.
+b1010000 +
+b1010000 2
+b1000000 Q
+0P
+b1000000 c
+b11 b
+1d
+1`
+b10 8
+1?
+b10 9
+b100 =
+01
+b1 -
+1R
+b11111010 K
+b11111010 T
+1!
+#180
+b100 c
+b0 b
+0d
+0`
+b1000000 f
+0!
+#185
+1@
+b11111010 >
+b11111010 A
+1P
+b1000000 c
+1.
+b10111100 +
+b10111100 2
+b10 :
+07
+0R
+b1001000101 K
+b1001000101 T
+0,
+b1 8
+b10 =
+1;
+1<
+1!
+#190
+0!
+#195
+b1 :
+17
+0@
+b1001000101 >
+b1001000101 A
+0.
+b1010000 +
+b1010000 2
+b1000000 Q
+0P
+b100 c
+b10 8
+0<
+b100 =
+1,
+1R
+b11111010 K
+b11111010 T
+1!
+#200
+b1000 c
+b100 f
+0!
+#205
+1@
+b11111010 >
+b11111010 A
+1P
+b1000 c
+1.
+b10111100 +
+b10111100 2
+b10 :
+07
+0R
+b1001000101 K
+b1001000101 T
+0,
+b1 8
+b10 =
+1<
+1!
+#210
+b1000 f
+0!
+#215
+b1 :
+17
+0@
+b1001000101 >
+b1001000101 A
+0.
+b1010000 +
+b1010000 2
+b1000000 Q
+0P
+b10 8
+0<
+b100 =
+1,
+1R
+b11111010 K
+b11111010 T
+1!
+#220
+0!
+#225
+1@
+b11111010 >
+b11111010 A
+1P
+1.
+b10111100 +
+b10111100 2
+b10 :
+07
+0R
+b1001000101 K
+b1001000101 T
+0,
+b1 8
+b10 =
+1<
+1!
+#230
+0!
+#235
+b1 :
+17
+0@
+b1001000101 >
+b1001000101 A
+0.
+b1010000 +
+b1010000 2
+b1000000 Q
+0P
+b10 8
+0<
+b100 =
+1,
+1R
+b11111010 K
+b11111010 T
+1!
